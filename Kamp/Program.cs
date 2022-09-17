@@ -7,16 +7,16 @@ namespace Kamp
     {
         static void Main(string[] args)
         {
-            List<string> kurslar = new List<string> { };
+            int sayi = Convert.ToInt32(Console.ReadLine());
+            int basamak = 0;
 
-            kurslar.Add(".NET");
-            kurslar.Add("Java");
-            kurslar.Add("Angular");
-
-            foreach (var item in kurslar)
+            while(sayi>0)
             {
-                Console.WriteLine(item);
+                sayi = sayi / 10;
+                basamak++;
+                
             }
+            Console.WriteLine(basamak.ToString());
         }
     }
 }
